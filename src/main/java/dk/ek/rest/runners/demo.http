@@ -43,3 +43,29 @@ POST http://{{url}}/auth/login
     "password": "1234"
 }
 
+
+###
+GET http://{{url}}/protected/admin_demo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIlRob21hcyBIYXJ0bWFublwiIiwic3ViIjoiQXNnZXIiLCJleHAiOjE3NTk0MTAwMDAsInJvbGVzIjoiQURNSU4sRm9kYm9sZCIsInVzZXJuYW1lIjoiQXNnZXIifQ.KZ1zidwRBQMrrjYpvb4YM6ToYWAadOtl0buLH0TJsNI
+
+###
+POST http://{{url}}/auth/create
+
+{
+  "username": "DanielTheFart1",
+  "password": "IsBornARetard"
+}
+
+###
+POST http://{{url}}/auth/login
+
+{
+  "username": "DanielTheFart1",
+  "password": "IsBornARetard"
+}
+
+###
+GET http://{{url}}/protected/user_demo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJcIlRob21hcyBIYXJ0bWFublwiIiwic3ViIjoiRGFuaWVsVGhlRmFydDEiLCJleHAiOjE3NTk0MTI4MjQsInJvbGVzIjoidXNlciIsInVzZXJuYW1lIjoiRGFuaWVsVGhlRmFydDEifQ.jRk9DX3YJwDbh9Kv7mQiAOAgMDFE2LgokduWpsmksuA
+
+

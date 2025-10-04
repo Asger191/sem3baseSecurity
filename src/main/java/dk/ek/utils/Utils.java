@@ -17,7 +17,7 @@ import java.util.Properties;
  * Author: Thomas Hartmann
  */
 public class Utils {
-    private static Logger logger = LoggerFactory.getLogger(Utils.class);
+    public static Logger logger = LoggerFactory.getLogger(Utils.class);
     public static void main(String[] args) {
         System.out.println(getPropertyValue("db.name", "properties-from-pom.properties"));
     }

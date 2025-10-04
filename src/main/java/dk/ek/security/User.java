@@ -20,7 +20,7 @@ public class User {
     private String username;
     private String password;
 
-    @ManyToMany()
+    @ManyToMany(fetch = FetchType.EAGER)
             @JoinTable(name = "users_roles",
                     joinColumns = @JoinColumn(name = "role_id"), inverseJoinColumns = @JoinColumn(name = "user_id"))
     Set<Role> roles = new HashSet<>();
